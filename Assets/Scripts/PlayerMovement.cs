@@ -5,15 +5,20 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
 
+    SpriteRenderer sr;
+
     public InputActionAsset inputActions;
 
     public float speed = 5;
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,5 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         rb.linearVelocity = new Vector2(moveX * speed, rb.linearVelocity.y);
+
+        sr.flipX = moveX < 0 ? true : false;
     }
 }
