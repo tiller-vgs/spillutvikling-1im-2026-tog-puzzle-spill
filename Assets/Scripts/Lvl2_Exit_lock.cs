@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Lvl2_Exit_lock : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject Lock_Canvas;
+
+    public void Exit_Lock_B()
     {
-        
+        Lock_Canvas.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
