@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869ab205af70f5b4085bf79521defad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lvl2_Exit_lock
-  Lock_Canvas: {fileID: 0}
+  Canvas: {fileID: 0}
 --- !u!1 &655666163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7720142174441302186, guid: 95cb9745d0f90ed4cb2976ad2147b05d, type: 3}
@@ -2324,14 +2324,13 @@ GameObject:
   - component: {fileID: 938720403}
   - component: {fileID: 938720402}
   - component: {fileID: 938720406}
-  - component: {fileID: 938720407}
   m_Layer: 5
   m_Name: Lock_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &938720402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,7 +2412,6 @@ RectTransform:
   - {fileID: 1912293058}
   - {fileID: 1003518871}
   - {fileID: 1702969136}
-  - {fileID: 1701298848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2433,25 +2431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869ab205af70f5b4085bf79521defad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lvl2_Exit_lock
-  Lock_Canvas: {fileID: 938720401}
---- !u!114 &938720407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938720401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 0}
-  Input_gull: {fileID: 0}
-  Input_white_circle: {fileID: 0}
-  Input_blue: {fileID: 0}
-  Lock_Canvas: {fileID: 938720401}
-  Bruker_input: 
+  Canvas: {fileID: 938720401}
 --- !u!1 &995089609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,7 +2602,6 @@ GameObject:
   - component: {fileID: 1003518874}
   - component: {fileID: 1003518873}
   - component: {fileID: 1003518872}
-  - component: {fileID: 1003518875}
   m_Layer: 5
   m_Name: Input_white_circle
   m_TagString: Untagged
@@ -2789,24 +2768,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003518870}
   m_CullTransparentMesh: 1
---- !u!114 &1003518875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1003518870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 0}
-  Input_gull: {fileID: 0}
-  Input_white_circle: {fileID: 0}
-  Input_blue: {fileID: 0}
-  Lock_Canvas: {fileID: 0}
-  Bruker_input: 
 --- !u!1 &1007600972
 GameObject:
   m_ObjectHideFlags: 0
@@ -3744,7 +3705,6 @@ GameObject:
   - component: {fileID: 1274618229}
   - component: {fileID: 1274618228}
   - component: {fileID: 1274618227}
-  - component: {fileID: 1274618230}
   m_Layer: 5
   m_Name: Input_green
   m_TagString: Untagged
@@ -3911,24 +3871,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274618225}
   m_CullTransparentMesh: 1
---- !u!114 &1274618230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274618225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 0}
-  Input_gull: {fileID: 0}
-  Input_white_circle: {fileID: 0}
-  Input_blue: {fileID: 0}
-  Lock_Canvas: {fileID: 0}
-  Bruker_input: 
 --- !u!1 &1436552796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,7 +4772,7 @@ Transform:
   m_GameObject: {fileID: 1664786516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 431.58, y: -4.97, z: 0}
+  m_LocalPosition: {x: 430.03, y: -4.97, z: 0}
   m_LocalScale: {x: 12.03807, y: 5.980906, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4850,60 +4792,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lock_trigger
   Lock_Canvas: {fileID: 938720401}
   Lock_Trigger: {fileID: 1664786516}
---- !u!1 &1701298847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1701298848}
-  - component: {fileID: 1701298849}
-  m_Layer: 5
-  m_Name: Checking
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1701298848
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701298847}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 938720405}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1701298849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701298847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 1274618227}
-  Input_gull: {fileID: 1912293059}
-  Input_white_circle: {fileID: 1003518872}
-  Input_blue: {fileID: 1702969137}
-  Lock_Canvas: {fileID: 938720401}
-  Bruker_input: 
 --- !u!1 &1702969135
 GameObject:
   m_ObjectHideFlags: 0
@@ -4916,7 +4804,6 @@ GameObject:
   - component: {fileID: 1702969139}
   - component: {fileID: 1702969138}
   - component: {fileID: 1702969137}
-  - component: {fileID: 1702969140}
   m_Layer: 5
   m_Name: Input_blue
   m_TagString: Untagged
@@ -5083,24 +4970,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702969135}
   m_CullTransparentMesh: 1
---- !u!114 &1702969140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702969135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 0}
-  Input_gull: {fileID: 0}
-  Input_white_circle: {fileID: 0}
-  Input_blue: {fileID: 0}
-  Lock_Canvas: {fileID: 0}
-  Bruker_input: 
 --- !u!1 &1732145125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5360,7 +5229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869ab205af70f5b4085bf79521defad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lvl2_Exit_lock
-  Lock_Canvas: {fileID: 0}
+  Canvas: {fileID: 938720401}
 --- !u!1 &1912293057
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,7 +5242,6 @@ GameObject:
   - component: {fileID: 1912293061}
   - component: {fileID: 1912293060}
   - component: {fileID: 1912293059}
-  - component: {fileID: 1912293062}
   m_Layer: 5
   m_Name: Input_gull
   m_TagString: Untagged
@@ -5540,24 +5408,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912293057}
   m_CullTransparentMesh: 1
---- !u!114 &1912293062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912293057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92a8ac174934d448a8cfc37b03dffe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lock_check
-  Input_green: {fileID: 0}
-  Input_gull: {fileID: 0}
-  Input_white_circle: {fileID: 0}
-  Input_blue: {fileID: 0}
-  Lock_Canvas: {fileID: 0}
-  Bruker_input: 
 --- !u!1001 &2044076666
 PrefabInstance:
   m_ObjectHideFlags: 0

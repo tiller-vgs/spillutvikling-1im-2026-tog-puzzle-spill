@@ -17,9 +17,4 @@ public class Lock_trigger : MonoBehaviour
             Lock_Canvas.SetActive(true);
         }
     }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        Lock_Canvas.SetActive(false);
-    }
 }
