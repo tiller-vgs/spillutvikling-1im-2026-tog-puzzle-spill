@@ -7,7 +7,7 @@ public class MainMenuButtons : MonoBehaviour
 {
 	public void StartButton()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(1);
 	}
 
 	public void ExitButton()

@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbcebf31d2f41c4084e9eee3c3db0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
-  sceneName: Main_menu
+  sceneName: Ending
   delay: 1
   useAsync: 1
 --- !u!1 &320750321
@@ -2025,7 +2025,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
