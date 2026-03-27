@@ -12,7 +12,7 @@ public class Lock_check : MonoBehaviour
     public GameObject Lock_Canvas;
     private string Right_lock_code = "96510";
     public string Bruker_input;
-
+    // Start is called before the first frame update
     void Check()
     {
 
@@ -24,7 +24,7 @@ public class Lock_check : MonoBehaviour
             LoadNextScene();
         }
     }
-
+    // This method is called to load the next scene when the correct code is entered
     public void LoadNextScene()
     {
         

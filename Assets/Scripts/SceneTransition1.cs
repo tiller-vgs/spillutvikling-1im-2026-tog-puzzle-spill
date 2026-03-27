@@ -13,7 +13,7 @@ public class SceneTransition1 : MonoBehaviour
 
     [Tooltip("Use asynchronous scene loading for smoother transitions.")]
     [SerializeField] private bool useAsync = true;
-
+    
     private bool _triggered;
 
     private void Reset()
@@ -30,7 +30,7 @@ public class SceneTransition1 : MonoBehaviour
     {
         if (_triggered) return;
         if (!other.CompareTag("Player")) return;
-
+        // Checks if the colliding object has the "Player" tag. If not, it ignores the collision.
         _triggered = true;
 
         if (delay > 0f)
@@ -40,6 +40,7 @@ public class SceneTransition1 : MonoBehaviour
         else
         {
             LoadScene();
+            // Prevents multiple triggers by setting _triggered to true, ensuring the scene loads only once per collision.
         }
     }
 
@@ -58,6 +59,7 @@ public class SceneTransition1 : MonoBehaviour
         else
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            // Loads the specified scene either asynchronously or synchronously based on the useAsync flag. Asynchronous loading allows for smoother transitions without freezing the game.
         }
     }
 }

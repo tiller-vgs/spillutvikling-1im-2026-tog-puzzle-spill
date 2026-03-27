@@ -3,9 +3,7 @@ using UnityEngine.SceneManagement; // Required for scene loading
 
 public class GameRestart : MonoBehaviour
 {
-    /// <summary>
     /// Restarts the currently active scene.
-    /// </summary>
     public void RestartGame()
     {
         // Get the active scene and reload it
@@ -13,9 +11,7 @@ public class GameRestart : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
     }
 
-    /// <summary>
-    /// Optional: Restart when pressing the 'R' key.
-    /// </summary>
+    /// Restart when pressing the 'R' key.
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))

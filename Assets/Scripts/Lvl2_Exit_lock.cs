@@ -8,5 +8,5 @@ public class Lvl2_Exit_lock : MonoBehaviour
     {
         Lock_Canvas.SetActive(false);
     }
-
+    // Update is called once per frame
 }

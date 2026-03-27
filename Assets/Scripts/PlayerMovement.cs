@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public InputActionAsset inputActions;
 
     public float speed = 5;
-
+    public Animator anim;
 
 
 
@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
-
+        
+        anim.SetFloat("horizontal", Mathf.Abs(moveX));
 
         rb.linearVelocity = new Vector2(moveX * speed, rb.linearVelocity.y);
 

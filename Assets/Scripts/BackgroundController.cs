@@ -32,6 +32,7 @@ public class BackgroundController : MonoBehaviour
 
             widths[i] = sr.bounds.size.x;
         }
+        // Initialize partStartX based on the initial positions of the parts and the parallax effect
 
         partStartX = new float[parts.Length];
 
@@ -45,7 +46,7 @@ public class BackgroundController : MonoBehaviour
             parts[i].position = new Vector3(partStartX[i] + initialParallaxOffset, parts[i].position.y, parts[i].position.z);
         }
     }
-
+    // LateUpdate is called after all Update functions have been called, ensuring that the camera's position is updated before we calculate the parallax effect and reposition the background parts.
     void LateUpdate()
     {
 
@@ -87,3 +88,4 @@ public class BackgroundController : MonoBehaviour
         }
     }
 }
+// This script creates a parallax scrolling effect for background layers in a 2D game. It manages multiple background parts, ensuring they loop seamlessly as the camera moves. The parallax effect is achieved by moving the background layers at different speeds based on their distance from the camera, creating a sense of depth.

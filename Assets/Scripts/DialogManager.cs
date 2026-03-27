@@ -15,7 +15,7 @@ public class DialogManager : MonoBehaviour
 
     string[] words;
     int number;
-
+    // This method is called to start a dialog sequence with the given message
     public void ShowMessage(string Message)
     {
         number = 0;
@@ -24,7 +24,7 @@ public class DialogManager : MonoBehaviour
         DialogSystem.SetActive(true);
         Skip();
     }
-
+    // This method is called when the player clicks the "Skip" button in the dialog UI
     public void Skip()
     {
         if (number < words.Length)
@@ -37,5 +37,6 @@ public class DialogManager : MonoBehaviour
             number = 0;
             DialogSystem.SetActive(false);
         }
+        
     }
 }
